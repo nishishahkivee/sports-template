@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Shoping Cart Design Using Bootstrap 4.0 </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .Product-img img {
+            width: 100%;
+        }
+
+        .main-section {
+            font-family: 'Roboto Condensed', sans-serif;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container main-section">
+        <div class="row">
+            <div class="col-lg-12 pb-2">
+                <h4 class="cart">Shoping Cart</h4>
+            </div>
+            <div class="col-lg-12 pl-3 pt-3">
+                <table class="table table-hover border bg-white">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th style="width:10%;">Quantity</th>
+                            <th>Subtotal</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="row">
+                                    <div class="col-lg-2 Product-img">
+                                        <img src="img/shoes.jpg" alt="..."
+                                            class="img-responsive" />
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <h4 class="nomargin">Shoes</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>$100</td>
+                            <td data-th="Quantity">
+                                <input type="number" class="form-control text-center" value="1">
+                            </td>
+                            <td>$100</td>
+                            <td class="actions" data-th="" style="width:10%;">
+                                <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row">
+                                    <div class="col-lg-2 Product-img">
+                                        <img src="img/t-shirt.jpg" alt="..."
+                                            class="img-responsive" />
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <h4 class="nomargin">T-shirt</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>$50</td>
+                            <td data-th="Quantity">
+                                <input type="number" class="form-control text-center" value="1">
+                            </td>
+                            <td> $50 </td>
+                            <td class="actions" data-th="" style="width:10%;">
+                                <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><a href="product.html" class="btn btn-warning text-white"><i class="fa fa-angle-left"></i> Continue
+                                    Shopping</a></td>
+                            <td colspan="2" class="hidden-xs"></td>
+                            <td class="hidden-xs text-center" style="width:10%;"><strong>Total : $150</strong></td>
+                            <td><a href="#" class="btn btn-success btn-block">Checkout <i
+                                        class="fa fa-angle-right"></i></a></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
