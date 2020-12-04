@@ -17,8 +17,9 @@
 //       }
 //     });
 //   }());
-$(document).ready(function(){ 
-    var counter = 0;    
+$(document).ready(function(){    
+ 
+    var itemCount = 0;    
     $("#register").click(function(){    
     var phoneNumber=$("#cnumber").val();
   var name=$("#name").val();
@@ -41,26 +42,26 @@ var phoneno = /^\d{10}$/;
   }
 });
     
-$(".btn-outline-dark").click(function(){        
-    counter++;
-    $("#counter").text(counter);
-    });
-  
-    $('.carousel.carousel-multi .item').each(function () {
-      var next = $(this).next();
-      if (!next.length) {
-        next = $(this).siblings(':first');
-      }
-      next.children(':first-child').clone().attr("aria-hidden", "true").appendTo($(this));
-    
-      if (next.next().length > 0) {
-        next.next().children(':first-child').clone().attr("aria-hidden", "true").appendTo($(this));
-      }
-      else {
-        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-      }
-    });
-
+$(".add").click(function(){        
+    itemCount++;
+    $("#itemCount").text(itemCount);
+     $(".cartItems").append("hello")
+});
+      $('.t-color1').click(function(){
+        $(".p-image").attr('src',"https://d19m59y37dris4.cloudfront.net/hub/1-4-3/img/shirt-small.png");
+        return false;
+      });
+      $('.t-color2').click(function(){
+        $(".p-image").attr('src',"https://d19m59y37dris4.cloudfront.net/hub/1-4-3/img/shirt-black-small.png");
+        return false;
+      });
+      $('.t-color3').click(function(){
+        $(".p-image").attr('src',"https://d19m59y37dris4.cloudfront.net/hub/1-4-3/img/shirt-green-small.png");
+        return false;
+      });
+      $('.remove').click(function(){        
+        $(".item1").remove();
+      });
 }); 
 
 
