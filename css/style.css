@@ -334,3 +334,26 @@ textarea {
 .list .form-check-input{
   margin-left:-7.25rem;
 }
+
+.popular-img img{
+  height:200px;
+  width:200px;
+}
+.shoe img{
+  height:100px;
+  width: 100px;
+}
+.category-area h1{
+  font-size: 70px;
+ color:gray;
+}
+.category-area .fa,h4,.discount h3{
+  color:#FBBA42;
+}
+.discount{
+  margin:90px 0px 90px;
+}
+/* .discount h3{
+  color:#FBBA42;
+} */
+

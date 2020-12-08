@@ -1,0 +1,195 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+</html>
+
+<body>
+    <header class="bg-secondary">
+        <nav class="navbar navbar-expand-sm navbar-light py-0 smart-scroll">
+            <a class="navbar-brand py-0" href="#">
+                <img src="img/test.png" width="200" height="70" alt="">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" href="#" data-toggle="dropdown">
+                            Sports
+                        </a>
+                        <ul class="dropdown-menu">
+                            <a class="dropdown-item" href="indoor.html">Indoor Sports</a>
+                            <a class="dropdown-item" href="outdoor.html">Outdoor Sports</a>
+                            <a class="dropdown-item" href="#">Child-hood Sports</a>
+                            <a class="dropdown-item" href="#">Mobile Sports</a>
+                            <a class="dropdown-item" href="#">International Sports</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="product.html">
+                            Purchase
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="detail.html"><i class="fa fa-shopping-cart"></i><span
+                                id="counter" class="badge badge-light"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="product-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card mt-3 flex-fill">
+                        <div class="card-body rounded popular shadow-lg overflow-hidden">
+                            <img src="img/puma.jpg" class="p-image card-img-top pb-2 mx-auto d-flex" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-detail">
+                        <ul class="price list-inline mt-5">
+                            <li class="list-inline-item current">$65.00</li>
+                            <li class="list-inline-item original">$90.00</li>
+                        </ul>
+                        <div class="review d-flex align-items-center">
+                            <ul class="rate list-inline">
+                                <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star-o text-primary"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                    <div class="quantity d-flex align-items-center">
+                        <button type="button" class="dec-btn btn btn-outline-dark border-0">-</button>
+                        <span>1</span>
+                        <button type="button" class="dec-btn btn btn-outline-dark border-0">+</button>
+                    </div>
+
+                    <div class="mt-3 dropdown bootstrap-select bs-select">
+                        <select id="product-size" class="bs-select" tabindex="-98">
+                            <option value="small">Small</option>
+                            <option value="meduim">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="x-large">X-Large</option>
+                        </select>
+                    </div>
+                    <div class="button mt-3">
+                        <button type="button" class="btn btn-outline-dark" id="add"><i class="fa fa-shopping-cart"></i>
+                            Add to cart</button>
+                        <button type="button" class="btn btn-outline-dark">Purchase</button>
+                    </div>
+                </div>
+            </div>
+            <div class="my-3">
+                <div class="shoe">
+                    <img src="img/shoes.png" alt="shirt"
+                        class="t-color1">
+                    <img src="img/shoes3.jpg" alt="shirt"
+                        class="t-color2">
+                    <img src="img/shoes4.jpg" alt="shirt"
+                        class="t-color3">
+                </div>
+            </div>
+            <div class="">
+            <ul role="tablist" class="nav nav-tabs flex-column flex-sm-row">
+                <li class="nav-item"><a data-toggle="tab" href="#description" role="tab" class="nav-link active" aria-selected="true">Description</a></li>
+                <li class="nav-item"><a data-toggle="tab" href="#additional-information" role="tab" class="nav-link" aria-selected="false">Additional Information</a></li>
+                
+              </ul>
+              </div>
+              <div class="tab-content">
+                <div id="description" role="tabpanel" class="pt-3 tab-pane active">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. LOLUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. LOLDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. LOLUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. LOLDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div id="additional-information" role="tabpanel" class="pt-3 tab-pane">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th class="border-0">Material:</th>
+                        <td class="border-0">Cotton</td>
+                      </tr>
+                      <tr>
+                        <th>Styles:</th>
+                        <td>Casual</td>
+                      </tr>
+                      <tr>
+                        <th>Properties:</th>
+                        <td>Short Sleeve</td>
+                      </tr>
+                      <tr>
+                        <th>Brand:</th>
+                        <td>Calvin Klein</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>               
+              </div>
+        </div>
+    </section>
+    <footer class=" bg-dark footer">
+        <div class="row mr-0">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left d-block">
+                <h4 class="text-light px-5 py-3">About Us</h4>
+                <p class="text-light  px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere
+                    laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                <ul class="icon list-inline list-unstyled px-5 pt-3">
+                    <li class="list-inline-item"><a href="#" class="fa pt-2 fa-facebook text-center"></a></li>
+                    <li class="list-inline-item"><a href="#" class="fa pt-2 fa-twitter text-center"></a></li>
+                    <li class="list-inline-item"><a href="#" class="fa pt-2 fa-youtube text-center"></a></li>
+                    <li class="list-inline-item"><a href="#" class="fa pt-2 fa-instagram text-center"></a></li>
+                </ul>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left text-light d-block">
+                <h4 class="py-3 pl-5">Contact Us</h4>
+                <div class="col-lg-12 pl-5 d-inline-block btn text-light text-left">
+                    <i class="fa fa-map-marker"></i>
+                    <span>203 Fake St. Mountain View, San Francisco,
+                        California, USA</span></div>
+                <div class="col-lg-12 pl-5 d-inline-block btn text-light text-left">
+                    <i class="fa fa-phone text-light"></i>
+                    <span>+2 392 3929 210</span></div>
+            </div>
+        </div>
+        <hr class="bg-secondary mx-5">
+        <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+            <p class="text-light py-3 text-center">Copyright Company Name © 2020. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>

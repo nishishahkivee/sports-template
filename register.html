@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="my-5 card shadow-lg">
+            <div class="card-body">
+                <img src="img/back-ground.jpg" class='card-img-top'>
+                <form method="get">
+                    <div class="field_wrapper">
+                        <div class="form-group">
+                            <label class="font-weight-bold">Firstname</label><input type="text" id="fname"
+                                class="form-control field" placeholder="Firstname" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Middlename</label><input type="text"
+                                class="form-control field" name="name" placeholder="Middlename" id="mname">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Lastname</label> <input type="text" id="lname"
+                                class="form-control field" name="name" placeholder="lastname">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Email</label><input type="email" class="form-control"
+                                placeholder="Enter Email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Contact-Number</label><input type="text"
+                                class="form-control" placeholder="Enter Mobile Number" id="cnumber">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label class="font-weight-bold">Birthdate</label>
+                                <input type="date" class="form-control" id="bdate">
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="font-weight-bold">Gender</label>
+                                <div class="dropdown">
+                                    <select id="gender" class="form-control">
+                                        <option value="Gender" disabled>Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="mt-3 font-weight-bold">Address</label>
+                            <textarea rows="3" class="form-control" id="address"></textarea>
+                        </div>
+                        <label class="d-block font-weight-bold">Hobby</label>
+                        <div class="d-inline form-check mr-3">
+                            <input type="checkbox" class="form-check-input" name="hobby1" value="Reading">Reading
+                        </div>
+                        <div class="d-inline form-check mr-3">
+                            <input type="checkbox" class="form-check-input mr-3" name="hobby1" value="Sports">Sports
+                        </div>
+                        <div class="d-inline form-check mr-3">
+                            <input type="checkbox" class="form-check-input" name="hobby1" value="Travelling">Travelling
+                        </div>
+                        <div class="form-check d-inline">
+                            <input type="checkbox" class="form-check-input add1" value="Other" id="Other">Add Other
+                            Hobby
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="submit">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal fade" id="data" tabindex="-1" role="dialog" aria-labelledby="snack" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="snack-title">Data</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="opct opacity-90 table table-condensed table-responsive">
+                            <thead class="bg-warning">
+                                <tr>
+                                    <th class="text-light">ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Contact</th>
+                                    <th>BirthDate</th>
+                                    <th>Gender</th>
+                                    <th>Address</th>
+                                    <th>Hobby</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="count">1</td>
+                                    <td id="name"></td>
+                                    <td id="tdata1"></td>
+                                    <td id="tdata2"></td>
+                                    <td id="tdata3"></td>
+                                    <td id="tdata4"></td>
+                                    <td id="tdata5"></td>
+                                    <td id="tdata7"></td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary">Close</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="script/main.js"></script>
+
+
+</html>
